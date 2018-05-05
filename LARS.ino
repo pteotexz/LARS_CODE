@@ -1,10 +1,8 @@
 /*
-LARS_LOAD ASSISTANCE ROVER SYSTEM
+LOAD ASSISTANCE ROVER SYSTEM
 Archit Khode
 San Jose State University 2018
 Controlling Motors via FS-R6b
-
-MODIFIED By: Paul Teogalbo
 */
 
 
@@ -63,8 +61,8 @@ if (1300 <= ch3 && ch3 <= 1500) {
         digitalWrite(in1, HIGH);
         digitalWrite(in2, LOW);
         analogWrite(ena, 50);
-        digitalWrite(in3, HIGH);
-        digitalWrite(in4, LOW);
+        digitalWrite(in3, LOW);
+        digitalWrite(in4, HIGH);
         analogWrite(enb, 50);
         safetoturn = false; // Don't want ch1's if block to reset the motor inputs
     }
